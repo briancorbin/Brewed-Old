@@ -9,10 +9,12 @@
 /* Begin PBXBuildFile section */
 		E87DEF7719A7C2AC00A6DB10 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87DEF7619A7C2AC00A6DB10 /* AppDelegate.swift */; };
 		E87DEF7A19A7C2AC00A6DB10 /* Brewed.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E87DEF7819A7C2AC00A6DB10 /* Brewed.xcdatamodeld */; };
-		E87DEF7C19A7C2AC00A6DB10 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87DEF7B19A7C2AC00A6DB10 /* ViewController.swift */; };
 		E87DEF7F19A7C2AC00A6DB10 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E87DEF7D19A7C2AC00A6DB10 /* Main.storyboard */; };
 		E87DEF8119A7C2AC00A6DB10 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E87DEF8019A7C2AC00A6DB10 /* Images.xcassets */; };
 		E87DEF8D19A7C2AC00A6DB10 /* BrewedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87DEF8C19A7C2AC00A6DB10 /* BrewedTests.swift */; };
+		E87DEF9919A7C30700A6DB10 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E87DEF9819A7C30700A6DB10 /* SWRevealViewController.m */; };
+		E87DEF9B19A7C3EA00A6DB10 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87DEF9A19A7C3EA00A6DB10 /* HomeViewController.swift */; };
+		E87DEF9D19A7C43000A6DB10 /* SideBarTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87DEF9C19A7C43000A6DB10 /* SideBarTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,12 +32,16 @@
 		E87DEF7519A7C2AC00A6DB10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E87DEF7619A7C2AC00A6DB10 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E87DEF7919A7C2AC00A6DB10 /* Brewed.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Brewed.xcdatamodel; sourceTree = "<group>"; };
-		E87DEF7B19A7C2AC00A6DB10 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E87DEF7E19A7C2AC00A6DB10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E87DEF8019A7C2AC00A6DB10 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		E87DEF8619A7C2AC00A6DB10 /* BrewedTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BrewedTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E87DEF8B19A7C2AC00A6DB10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E87DEF8C19A7C2AC00A6DB10 /* BrewedTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrewedTests.swift; sourceTree = "<group>"; };
+		E87DEF9619A7C30600A6DB10 /* Brewed-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Brewed-Bridging-Header.h"; sourceTree = "<group>"; };
+		E87DEF9719A7C30700A6DB10 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		E87DEF9819A7C30700A6DB10 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		E87DEF9A19A7C3EA00A6DB10 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		E87DEF9C19A7C43000A6DB10 /* SideBarTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideBarTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,11 +84,15 @@
 			isa = PBXGroup;
 			children = (
 				E87DEF7619A7C2AC00A6DB10 /* AppDelegate.swift */,
-				E87DEF7B19A7C2AC00A6DB10 /* ViewController.swift */,
+				E87DEF9719A7C30700A6DB10 /* SWRevealViewController.h */,
+				E87DEF9819A7C30700A6DB10 /* SWRevealViewController.m */,
+				E87DEF9619A7C30600A6DB10 /* Brewed-Bridging-Header.h */,
 				E87DEF7D19A7C2AC00A6DB10 /* Main.storyboard */,
 				E87DEF8019A7C2AC00A6DB10 /* Images.xcassets */,
 				E87DEF7819A7C2AC00A6DB10 /* Brewed.xcdatamodeld */,
 				E87DEF7419A7C2AC00A6DB10 /* Supporting Files */,
+				E87DEF9A19A7C3EA00A6DB10 /* HomeViewController.swift */,
+				E87DEF9C19A7C43000A6DB10 /* SideBarTableViewController.swift */,
 			);
 			path = Brewed;
 			sourceTree = "<group>";
@@ -211,9 +221,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E87DEF7C19A7C2AC00A6DB10 /* ViewController.swift in Sources */,
 				E87DEF7A19A7C2AC00A6DB10 /* Brewed.xcdatamodeld in Sources */,
 				E87DEF7719A7C2AC00A6DB10 /* AppDelegate.swift in Sources */,
+				E87DEF9919A7C30700A6DB10 /* SWRevealViewController.m in Sources */,
+				E87DEF9B19A7C3EA00A6DB10 /* HomeViewController.swift in Sources */,
+				E87DEF9D19A7C43000A6DB10 /* SideBarTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,9 +343,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Brewed/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Brewed/Brewed-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -342,9 +357,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Brewed/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Brewed/Brewed-Bridging-Header.h";
 			};
 			name = Release;
 		};
