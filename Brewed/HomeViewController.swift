@@ -9,7 +9,7 @@
 import UIKit
 
 class HomeViewController: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -24,6 +24,10 @@ class HomeViewController: UIViewController {
     }
     
 
+    @IBAction func menuAction(sender: AnyObject) {
+        self.revealViewController().revealToggle(sender)
+    }
+    
     /*
     // MARK: - Navigation
 

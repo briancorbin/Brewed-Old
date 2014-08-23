@@ -9,34 +9,106 @@
 import UIKit
 
 class SideBarTableViewController: UITableViewController {
-
+    
+    let menuOptions = ["home", "stylesandingredients", "styles", "fermentables", "hops", "yeasts", "extras"]
+    var stylesAndIngredientsShowing = false
+    
+    @IBOutlet weak var stylesLbl: UILabel!
+    @IBOutlet weak var fermentablesLbl: UILabel!
+    @IBOutlet weak var hopsLbl: UILabel!
+    @IBOutlet weak var yeastsLbl: UILabel!
+    @IBOutlet weak var extrasLbl: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        stylesLbl.hidden = true
+        fermentablesLbl.hidden = true
+        hopsLbl.hidden = true
+        yeastsLbl.hidden = true
+        extrasLbl.hidden = true
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
-    // MARK: - Table view data source
-
     override func numberOfSectionsInTableView(tableView: UITableView!) -> Int {
-        // #warning Potentially incomplete method implementation.
-        // Return the number of sections.
-        return 0
+        return 1
+    }
+    
+    override func tableView(tableView: UITableView!, heightForRowAtIndexPath indexPath: NSIndexPath!) -> CGFloat {
+        var height = 55.0
+        if(indexPath.row >= 2 && indexPath.row <= 6)
+        {
+            height = stylesAndIngredientsShowing ? 55.0 : 0.0
+        }
+        
+        return CGFloat(height)
     }
 
     override func tableView(tableView: UITableView!, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete method implementation.
-        // Return the number of rows in the section.
-        return 0
+        return menuOptions.count
+    }
+    
+    override func tableView(tableView: UITableView!, didSelectRowAtIndexPath indexPath: NSIndexPath!) {
+        tableView .deselectRowAtIndexPath(indexPath, animated: true)
+        if(indexPath.row == 1)
+        {
+            if(stylesAndIngredientsShowing)
+            {
+                self .hideStylesAndIngredientsCells()
+            }
+            else
+            {
+                self .showStylesAndIngredientsCells()
+            }
+            
+        }
+    }
+    
+    func hideStylesAndIngredientsCells() {
+        stylesAndIngredientsShowing = false
+        
+        self.tableView .beginUpdates()
+        self.tableView .endUpdates()
+
+        UIView .animateWithDuration(0.25, animations:{() in
+            self.stylesLbl.alpha = 0.0;
+            self.fermentablesLbl.alpha = 0.0;
+            self.hopsLbl.alpha = 0.0;
+            self.yeastsLbl.alpha = 0.0;
+            self.extrasLbl.alpha = 0.0
+            }, completion:{(Bool) in
+                self.stylesLbl.hidden = true;
+                self.fermentablesLbl.hidden = true;
+                self.hopsLbl.hidden = true;
+                self.yeastsLbl.hidden = true;
+                self.extrasLbl.hidden = true
+        })
+        
+    }
+    
+    func showStylesAndIngredientsCells() {
+        stylesAndIngredientsShowing = true
+        
+        self.tableView .beginUpdates()
+        self.tableView .endUpdates()
+        
+        self.stylesLbl.hidden = false
+        self.fermentablesLbl.hidden = false
+        self.hopsLbl.hidden = false
+        self.yeastsLbl.hidden = false
+        self.extrasLbl.hidden = false
+        
+        UIView .animateWithDuration(0.25, animations:{() in
+            self.stylesLbl.alpha = 1.0;
+            self.fermentablesLbl.alpha = 1.0;
+            self.hopsLbl.alpha = 1.0;
+            self.yeastsLbl.alpha = 1.0;
+            self.extrasLbl.alpha = 1.0
+        })
     }
 
     /*
