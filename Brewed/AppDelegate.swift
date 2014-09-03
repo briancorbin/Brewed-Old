@@ -16,7 +16,26 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication!, didFinishLaunchingWithOptions launchOptions: NSDictionary!) -> Bool {
-        // Override point for customization after application launch.
+        
+        //Parse .setApplicationId("Xyt9ZdiQRcu6yQWZv0o0JjTvWkjlVOBBdhOgMS4T", clientKey: "zhjlpBFpwl6JOavkXNqshOy3rc206YsfsgtbH6a8")
+        
+        /*var query = PFQuery(className: "Styles")
+        query.whereKey("playerName", equalTo:"Sean Plott")
+        query.findObjectsInBackgroundWithBlock {
+            (objects: [AnyObject]!, error: NSError!) -> Void in
+            if error == nil {
+                // The find succeeded.
+                NSLog("Successfully retrieved \(objects.count) objects.")
+                // Do something with the found objects
+                for object in objects {
+                    NSLog("%@", object.objectId)
+                }
+            } else {
+                // Log details of the failure
+                NSLog("Error: %@ %@", error, error.userInfo!)
+            }
+        }*/
+        
         return true
     }
 

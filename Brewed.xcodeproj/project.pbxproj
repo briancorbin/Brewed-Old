@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E8414D0819A92EB40062891A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8414D0619A92E9E0062891A /* SystemConfiguration.framework */; };
+		E8414D0919A92EB40062891A /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8414D0419A92E990062891A /* StoreKit.framework */; };
+		E8414D0A19A92EB40062891A /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8414D0219A92E920062891A /* Security.framework */; };
+		E8414D0B19A92EB40062891A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8414D0019A92E8C0062891A /* QuartzCore.framework */; };
+		E8414D0C19A92EB40062891A /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8414CFE19A92E850062891A /* MobileCoreServices.framework */; };
+		E8414D0D19A92EB40062891A /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E8414CFC19A92E7F0062891A /* libz.dylib */; };
+		E8414D0E19A92EB40062891A /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8414CFA19A92E780062891A /* CoreLocation.framework */; };
+		E8414D0F19A92EB40062891A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8414CF819A92E700062891A /* CoreGraphics.framework */; };
+		E8414D1019A92EB40062891A /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8414CF619A92E680062891A /* CFNetwork.framework */; };
+		E8414D1119A92EB40062891A /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8414CF419A92E600062891A /* AudioToolbox.framework */; };
 		E87DEF7719A7C2AC00A6DB10 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87DEF7619A7C2AC00A6DB10 /* AppDelegate.swift */; };
 		E87DEF7A19A7C2AC00A6DB10 /* Brewed.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E87DEF7819A7C2AC00A6DB10 /* Brewed.xcdatamodeld */; };
 		E87DEF7F19A7C2AC00A6DB10 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E87DEF7D19A7C2AC00A6DB10 /* Main.storyboard */; };
@@ -15,6 +25,7 @@
 		E87DEF9919A7C30700A6DB10 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E87DEF9819A7C30700A6DB10 /* SWRevealViewController.m */; };
 		E87DEF9B19A7C3EA00A6DB10 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87DEF9A19A7C3EA00A6DB10 /* HomeViewController.swift */; };
 		E87DEF9D19A7C43000A6DB10 /* SideBarTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87DEF9C19A7C43000A6DB10 /* SideBarTableViewController.swift */; };
+		E8C121B019A93608006596DD /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8C121AF19A93608006596DD /* Parse.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,6 +39,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E8414CF419A92E600062891A /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		E8414CF619A92E680062891A /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		E8414CF819A92E700062891A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		E8414CFA19A92E780062891A /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		E8414CFC19A92E7F0062891A /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		E8414CFE19A92E850062891A /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		E8414D0019A92E8C0062891A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		E8414D0219A92E920062891A /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		E8414D0419A92E990062891A /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		E8414D0619A92E9E0062891A /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		E87DEF7119A7C2AC00A6DB10 /* Brewed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Brewed.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E87DEF7519A7C2AC00A6DB10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E87DEF7619A7C2AC00A6DB10 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -42,6 +63,7 @@
 		E87DEF9819A7C30700A6DB10 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		E87DEF9A19A7C3EA00A6DB10 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		E87DEF9C19A7C43000A6DB10 /* SideBarTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideBarTableViewController.swift; sourceTree = "<group>"; };
+		E8C121AF19A93608006596DD /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = ../../Frameworks/Parse.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +71,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8414D0819A92EB40062891A /* SystemConfiguration.framework in Frameworks */,
+				E8414D0919A92EB40062891A /* StoreKit.framework in Frameworks */,
+				E8414D0A19A92EB40062891A /* Security.framework in Frameworks */,
+				E8C121B019A93608006596DD /* Parse.framework in Frameworks */,
+				E8414D0B19A92EB40062891A /* QuartzCore.framework in Frameworks */,
+				E8414D0C19A92EB40062891A /* MobileCoreServices.framework in Frameworks */,
+				E8414D0D19A92EB40062891A /* libz.dylib in Frameworks */,
+				E8414D0E19A92EB40062891A /* CoreLocation.framework in Frameworks */,
+				E8414D0F19A92EB40062891A /* CoreGraphics.framework in Frameworks */,
+				E8414D1019A92EB40062891A /* CFNetwork.framework in Frameworks */,
+				E8414D1119A92EB40062891A /* AudioToolbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +95,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E8414CF219A92E050062891A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E8C121AF19A93608006596DD /* Parse.framework */,
+				E8414D0619A92E9E0062891A /* SystemConfiguration.framework */,
+				E8414D0419A92E990062891A /* StoreKit.framework */,
+				E8414D0219A92E920062891A /* Security.framework */,
+				E8414D0019A92E8C0062891A /* QuartzCore.framework */,
+				E8414CFE19A92E850062891A /* MobileCoreServices.framework */,
+				E8414CFC19A92E7F0062891A /* libz.dylib */,
+				E8414CFA19A92E780062891A /* CoreLocation.framework */,
+				E8414CF819A92E700062891A /* CoreGraphics.framework */,
+				E8414CF619A92E680062891A /* CFNetwork.framework */,
+				E8414CF419A92E600062891A /* AudioToolbox.framework */,
+			);
+			name = Frameworks;
+			path = ..;
+			sourceTree = "<group>";
+		};
 		E87DEF6819A7C2AC00A6DB10 = {
 			isa = PBXGroup;
 			children = (
@@ -90,9 +142,10 @@
 				E87DEF7D19A7C2AC00A6DB10 /* Main.storyboard */,
 				E87DEF8019A7C2AC00A6DB10 /* Images.xcassets */,
 				E87DEF7819A7C2AC00A6DB10 /* Brewed.xcdatamodeld */,
-				E87DEF7419A7C2AC00A6DB10 /* Supporting Files */,
 				E87DEF9A19A7C3EA00A6DB10 /* HomeViewController.swift */,
 				E87DEF9C19A7C43000A6DB10 /* SideBarTableViewController.swift */,
+				E87DEF7419A7C2AC00A6DB10 /* Supporting Files */,
+				E8414CF219A92E050062891A /* Frameworks */,
 			);
 			path = Brewed;
 			sourceTree = "<group>";
@@ -347,7 +400,7 @@
 				INFOPLIST_FILE = Brewed/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "Brewed/Brewed-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/briancorbin/Documents/iOS Development/Apps/Brewed/Brewed/Brewed-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -361,7 +414,7 @@
 				INFOPLIST_FILE = Brewed/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "Brewed/Brewed-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/briancorbin/Documents/iOS Development/Apps/Brewed/Brewed/Brewed-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -418,6 +471,7 @@
 				E87DEF9219A7C2AC00A6DB10 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E87DEF9319A7C2AC00A6DB10 /* Build configuration list for PBXNativeTarget "BrewedTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +480,7 @@
 				E87DEF9519A7C2AC00A6DB10 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
